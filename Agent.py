@@ -48,7 +48,7 @@ class Agent():
         if self.t_step == 0:
             if(len(self.memory) > self.memory.batch_size):
                 experiences = self.memory.get_random_sample()
-                self.learn(experiences, 0.99)
+                self.learn(experiences, 0.99) # discount factor
 
     def learn(self, experiences, gamma):
         """
