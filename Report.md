@@ -33,7 +33,8 @@ The Project consists of three main files as well as
  > * Environment solved in 908 episodes, Avg Score: 17.03
  
  Running the Agent 100 times, once the environment was solved
-  ![Plot of rewards solved](Images/solved-plot.png)
+
+ ![Plot of rewards solved](Images/solved-plot.png)
  > * Average Score: 16.91
 
 ## Future work
