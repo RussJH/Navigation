@@ -1,6 +1,6 @@
 # Project: Navigation
 ---
- ### Overview
+ ## Overview
  
  This module is an implementation of a Q-Learning agent to solve a game where we need to collect yellow bananas while avoiding blue bananas.
 
@@ -15,14 +15,18 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
     
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
- ### Running the agent
+![Video](Images/banana2.mp4)
+
+ ## Getting Started
+
+ #### Running the agent
 
  TODO
-
+ 
  ### Dependencies
 
  TODO
 
- ### Links
+ ## Links
 
  TODO
