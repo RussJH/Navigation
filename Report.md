@@ -21,16 +21,17 @@ The Project consists of three main files as well as
  The figure below is the plot of the rewards over runs during the training episodes
 
  ![Plot of rewards during training](Images/learning.png)
- > * Episode 100	Avg Score: 2.75
- > * Episode 200	Avg Score: 8.24
- > * Episode 300	Avg Score: 12.78
- > * Episode 400	Avg Score: 13.82
- > * Episode 500	Avg Score: 14.39
- > * Episode 600	Avg Score: 16.23
- > * Episode 700	Avg Score: 16.26
- > * Episode 800	Avg Score: 16.78
- > * Episode 900	Avg Score: 16.81
- > * Environment solved in 908 episodes, Avg Score: 17.03
+ > * Episode 100	Avg Score: 1.65
+ > * Episode 200	Avg Score: 6.46
+ > * Episode 300	Avg Score: 12.69
+ > * Episode 400	Avg Score: 13.73
+ > * Episode 500	Avg Score: 15.76
+ > * Episode 600	Avg Score: 16.02
+ > * Episode 700	Avg Score: 15.91
+ > * Episode 800	Avg Score: 15.76
+ > * Episode 900	Avg Score: 16.45
+ > * Episode 1000	Avg Score: 16.73
+ > * Agent Trained in 1000 episodes.	Avg Score: 16.73
  
  Running the Agent 100 times, once the environment was solved
 
