@@ -12,12 +12,14 @@ import torch.optim as optim
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Agent():
-    """Deep Q-learning agent """
+    """Deep Q-Network Agent """
 
     def __init__(self, state_size, action_size, seed=0):
-        """
-        Initialize Agent
-        TODO: Add init code here
+        """Initialize Agent
+        Args:
+            state_size: number of possible states
+            action_size: number of possible acitons
+            seed: random seed
         """
         self.state_size = state_size
         self.action_size = action_size
@@ -25,7 +27,7 @@ class Agent():
         # QNetwork model
         self.qnetwork_local = QNetwork(state_size, action_size, seed).to(device)
         self.qnetwork_target = QNetwork(state_size, action_size, seed).to(device)
-        self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=5e-4) # Learning rate TODO: Comment this more
+        self.optimizer = optim.Adam(self.qnetwork_local.parameters(), lr=5e-4) # Learning rate
 
         # Memory buffer
         self.memory = ReplayBuffer(action_size, seed=seed)
@@ -48,11 +50,14 @@ class Agent():
         if self.t_step == 0:
             if(len(self.memory) > self.memory.batch_size):
                 experiences = self.memory.get_random_sample()
-                self.learn(experiences, 0.99)
+                self.learn(experiences, 0.99) # discount factor
 
     def learn(self, experiences, gamma):
-        """
-        TODO: implement learning
+        """Teachs the agent based on the current state, action reward and next state
+        
+        Args:
+            experiences: tuple of state, actions, rewards, next states and done
+            gamma: the discount factor
         """
         states, actions, rewards, next_states, dones = experiences
 
@@ -60,7 +65,6 @@ class Agent():
         Q_targets_next = self.qnetwork_target(next_states).detach().max(1)[0].unsqueeze(1)
         # Compute Q targets for current states 
         Q_targets = rewards + (gamma * Q_targets_next * (1 - dones))
-
         # Get expected Q values from local model
         Q_expected = self.qnetwork_local(states).gather(1, actions)
 
