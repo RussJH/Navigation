@@ -2,7 +2,7 @@
 ---
  ## Overview
  
- This module is an implementation of a Q-Learning agent to solve a game where we need to collect yellow bananas while avoiding blue bananas.
+ This project is a an implementation of a Q-Learning agent to solve a game where we need to collect yellow bananas while avoiding blue bananas. The Agent and QNetwork was modeled from the DQN [Agent](https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/dqn_agent.py) and [model](https://github.com/udacity/deep-reinforcement-learning/blob/master/dqn/solution/model.py) in the Deep Q Network Udacity assigment.
 
  A reward of +1 is given for collecting a yellow banana, and a reward of -1 is given for collecting a blue bananna. 
  
