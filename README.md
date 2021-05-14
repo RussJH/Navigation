@@ -21,8 +21,8 @@ The task is episodic, and in order to solve the environment, your agent must get
 
  There are two ways to interact and run the project:
 
- * Navigation.ipynb -- This Jupyter Notebook is used to train the Agent and save the weights to the `model.pt` file. This file will play the banana game for 1000 iterations, learning as it goes. Once it has completed the 1000 iterations it will solve the weights to the aformentioned `model.pt` file
- * NavigationSolved.ipynb -- This Jupyter Notebook is used to play back the trained agent using the `model.pt` file. This file will open the `model.pt` file and run it 100 times, then print out the average score of the runs as well as a plot of the runs.
+ * [Navigation.ipynb](./Navigation.ipynb) -- This Jupyter Notebook is used to train the Agent and save the weights to the `model.pt` file. This file will play the banana game for 1000 iterations, learning as it goes. Once it has completed the 1000 iterations it will solve the weights to the aformentioned `model.pt` file
+ * [NavigationSolved.ipynb](./NavigationSolved.ipynb) -- This Jupyter Notebook is used to play back the trained agent using the `model.pt` file. This file will open the `model.pt` file and run it 100 times, then print out the average score of the runs as well as a plot of the runs.
 
  ### Dependencies
  In order to run the project you will need several things installed
@@ -40,6 +40,6 @@ The task is episodic, and in order to solve the environment, your agent must get
  * `Navigation.ipynb` Will retrain the model weights and then run the game
  * `NavigationSolved.ipynb` Will run the weights provided by `model.pt` 100 times and show the plot distribution of scores
 
- ## Links
+### Details
 
- TODO
+See the discription in the [Report.md](./Report.md)
